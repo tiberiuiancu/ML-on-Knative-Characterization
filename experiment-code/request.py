@@ -29,19 +29,7 @@ logging.basicConfig(
 )
 
 # service names that we will make inference calls to
-services = [
-    "cpu1-scale1-any",
-    # "cpu1-scale1-ml",
-
-    # "cpu05-scale1-ml",
-    # "cpu2-scale1-ml",
-    # "cpu4-scale1-ml",
-    # "cpu8-scale1-ml",
-
-    # "cpu1-scale2-ml",
-    # "cpu1-scale4-ml",
-    # "cpu1-scale8-ml",
-]
+services = []
 
 # get a random permutation of services, and run them N_RUNS times
 services = N_RUNS * services
@@ -64,7 +52,7 @@ client = boto3.client(
 
 
 def s3_upload(buf: str, service: str, run: int):
-    client.put_object(Bucket="tibi-test", Key=f"thesis/experiments/latency/{service}_{str(run)}.csv", Body=buf)
+    client.put_object(Bucket="test", Key=f"thesis/experiments/latency/{service}_{str(run)}.csv", Body=buf)
     logging.info("flushed dataframe")
 
 
@@ -73,7 +61,7 @@ def make_request(service):
     img = random.choice(imgs)
 
     # create endpoint url from service name
-    endpoint = f"http://inference-experiment-{service}.ai-models.svc.cluster.local:80/predict"
+    endpoint = f"http://{service}:80/predict"
 
     # record start time
     start = time.time()
