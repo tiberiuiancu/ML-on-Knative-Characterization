@@ -1,4 +1,4 @@
-# Experiment code and analysis notebooks for my BSc. thesis
+# Experiment code and analysis notebooks for serverless ML experiments on Knative
 
 ### Repository structure
 
