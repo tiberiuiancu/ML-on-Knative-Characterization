@@ -19,3 +19,27 @@ The directory `analysis` contains data analysis of the monitored models.
 #### Experiment analysis
 The directory `experiments` contains the data analysis of the experiments ran with `experiment-code`.
 - `experiments/analysis.ipynb` contains the code and plots used in the report
+
+### Data download
+
+Download the two dataset files used in data analysis from [Zenodo](https://zenodo.org/record/8104182) and place them in the folder `analysis/data/processed`.
+
+Download the two dataset files used in the experiment analysis from [Zenodo](https://zenodo.org/record/8104192) and place them in the folder `experiments/data/processed`.
+
+### How to run
+
+1. make sure to have valid Python 3 and R installations
+2. install jupyter notebook with 
+```bash
+pip install jupyter notebook
+```
+3. install the R kernel for jupyter
+```R
+install.packages('IRkernel')
+IRkernel::installspec()
+```
+4. clone this repository and `cd` into the root folder
+5. start jupyter notebook; now you may run the analysis notebooks
+```bash
+jupyter notebook
+```
