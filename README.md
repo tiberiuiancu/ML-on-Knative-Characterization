@@ -31,11 +31,11 @@ There are two datasets produced during this research, hosted on Zenodo. The firs
 ### How to run
 
 1. make sure to have valid Python 3 and R installations
-2. install jupyter notebook with 
+2. install jupyter notebook
 ```bash
 pip install jupyter notebook
 ```
-3. install the R kernel for jupyter
+3. install the R kernel for jupyter, by running the following R code
 ```R
 install.packages('IRkernel')
 IRkernel::installspec()
