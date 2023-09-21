@@ -22,9 +22,11 @@ The directory `experiments` contains the data analysis of the experiments ran wi
 
 ### Data download
 
-Download the two dataset files used in data analysis from [Zenodo](https://zenodo.org/record/8104182) and place them in the folder `analysis/data/processed`.
+There are two datasets produced during this research, hosted on Zenodo. The first of the two artifacts was used during exploratory data analysis, while the second was collected from the experiments we ran. The jupyter notebooks used for analysis rely on these datasets to be downloaded to the right location:
 
-Download the two dataset files used in the experiment analysis from [Zenodo](https://zenodo.org/record/8104192) and place them in the folder `experiments/data/processed`.
+1. download the two dataset files used in data analysis from [Zenodo](https://zenodo.org/record/8104182) and place them in the folder `analysis/data/processed`.
+
+2. download the two dataset files used in the experiment analysis from [Zenodo](https://zenodo.org/record/8104192) and place them in the folder `experiments/data/processed`.
 
 ### How to run
 
